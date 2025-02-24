@@ -7,11 +7,11 @@ Query Manager App is a JavaFX-based application designed for efficiently managin
 
 ### Query Management
 - **Pending Queries:**  
-  Queries under development or awaiting execution are stored as TXT files.
+  Queries under development or Testing are stored as TXT files.
 - **Deployed Queries:**  
   Finalized or executed queries are stored as TXT files.
 - **Temp Queries:**  
-  Temporary queries used for testing or short-term access are stored in JSON format.
+  Temporary queries used for testing or verification or short-term are stored in JSON format.
 
 ### Home Screen (SaveQueryController)
 - **Save Queries Tab:**  
@@ -56,13 +56,13 @@ Query Manager App is a JavaFX-based application designed for efficiently managin
    - Edit the query and use the provided buttons to save, copy, or close the editor.
 
 ## Installation & Setup
+- Download the setup file from the link
 
 ### Prerequisites
-- **Java Development Kit (JDK) 11 or higher**
-- **JavaFX SDK**
-- A Java IDE (e.g., IntelliJ IDEA, Eclipse, or NetBeans)
+- Nothing, everything is included in the setup file 
+- Just make sure to install it in "C:\Program Files (x86)"
 
-### Steps to Run
+### Clone the Repository
 1. **Clone the Repository:**
    ```sh
    git clone https://github.com/yourusername/save-query-app.git
