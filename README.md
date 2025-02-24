@@ -27,6 +27,9 @@ Query Manager App is a JavaFX-based application designed for efficiently managin
   - **Is Temp Query Checkbox:** Mark a query as temporary.
   - **Code Editor:** A custom editor for writing SQL queries.
   - **Save/Clear Buttons:** Options to save the query or clear the input fields.
+## Home Screen
+![Save Home](screenshots/SaveHome.png)
+
 
 - **View Queries Tab:**  
   - **Three Sections:**  
