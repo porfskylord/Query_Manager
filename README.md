@@ -75,10 +75,6 @@ Query Manager App is a JavaFX-based application designed for efficiently managin
    - Enjoy an IDE-like experience with line numbers and syntax highlighting.
    - Edit the query and use the provided buttons to save, copy, or close the editor.
 
-## Installation & Setup
-- Download the setup file from the link
-- 🔗 [Score Card](https://porfskylord.github.io/Query_Manager/) 
-
 ### Clone the Repository
 1. **Clone the Repository:**
    ```sh
