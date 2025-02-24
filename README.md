@@ -3,6 +3,14 @@
 ## Overview
 Query Manager App is a JavaFX-based application designed for efficiently managing, organizing, and editing SQL queries. It categorizes queries into three sections and provides an IDE-like Query Editor with line numbers and syntax highlighting.
 
+## Installation & Setup
+- Download the setup file from the link
+- 🔗 [Score Card](https://porfskylord.github.io/Query_Manager/) 
+
+### Prerequisites
+- Nothing, everything is included in the setup file 
+- Just make sure to install it in "C:\Program Files (x86)"
+
 ## Features
 
 ### Query Management
@@ -57,6 +65,7 @@ Query Manager App is a JavaFX-based application designed for efficiently managin
 
 ## Installation & Setup
 - Download the setup file from the link
+- 🔗 [Score Card](https://porfskylord.github.io/Query_Manager/) 
 
 ### Prerequisites
 - Nothing, everything is included in the setup file 
