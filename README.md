@@ -5,7 +5,7 @@ Query Manager App is a JavaFX-based application designed for efficiently managin
 
 ## Installation & Setup
 - Download the setup file from the link
-- 🔗 [Score Card](https://porfskylord.github.io/Query_Manager/) 
+- 🔗 [WebPage For Download Link](https://porfskylord.github.io/Query_Manager/) 
 
 ### Prerequisites
 - Nothing, everything is included in the setup file 
