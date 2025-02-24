@@ -5,11 +5,13 @@ Query Manager App is a JavaFX-based application designed for efficiently managin
 
 ## Installation & Setup
 - Download the setup file from the link
-- 🔗 [WebPage For Download Link](https://porfskylord.github.io/Query_Manager/) 
+- 🔗 [WebPage For Download Link](https://porfskylord.github.io/Query_Manager/)
+- ![Webpage to Download](screenshots/webpagedownload.png)
+
 
 ### Prerequisites
 - Nothing, everything is included in the setup file 
-- Just make sure to install it in "C:\Program Files (x86)"
+- Just make sure to install it in "C:\Program Files (x86)\"
 
 ## Features
 
@@ -27,9 +29,9 @@ Query Manager App is a JavaFX-based application designed for efficiently managin
   - **Is Temp Query Checkbox:** Mark a query as temporary.
   - **Code Editor:** A custom editor for writing SQL queries.
   - **Save/Clear Buttons:** Options to save the query or clear the input fields.
-## Home Screen
+    
+#### Save Queries Screen
 ![Save Home](screenshots/SaveHome.png)
-
 
 - **View Queries Tab:**  
   - **Three Sections:**  
@@ -38,6 +40,9 @@ Query Manager App is a JavaFX-based application designed for efficiently managin
     - **Deployed Queries:** Shows deployed queries with management options.
   - **Search & Filter:** Each section (for Pending and Deployed) includes search functionality to quickly locate queries.
   - **Refresh Button:** Update the query lists to view the most recent changes.
+    
+#### View Queries Screen
+![View Queries](screenshots/ViewQuery.png)
 
 ### Query Editor (QueryEditorController)
 - **IDE-like Editing Experience:**  
@@ -47,6 +52,10 @@ Query Manager App is a JavaFX-based application designed for efficiently managin
   - **Save Button:** Save modifications made to the query.
   - **Copy Query Button:** Quickly copy the query text.
   - **Close Button:** Exit the query editor.
+
+#### Query Editor Screen
+![Query Editor](screenshots/QueryEditor.png)
+
 
 ## Application Workflow
 
@@ -69,10 +78,6 @@ Query Manager App is a JavaFX-based application designed for efficiently managin
 ## Installation & Setup
 - Download the setup file from the link
 - 🔗 [Score Card](https://porfskylord.github.io/Query_Manager/) 
-
-### Prerequisites
-- Nothing, everything is included in the setup file 
-- Just make sure to install it in "C:\Program Files (x86)"
 
 ### Clone the Repository
 1. **Clone the Repository:**
