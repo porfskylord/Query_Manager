@@ -1,22 +1,22 @@
 <component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="SaveQuery:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/SaveQuery_jar</output-path>
-    <root id="archive" name="SaveQuery.jar">
-      <element id="module-output" name="SaveQuery" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../json-20210307.jar" path-in-jar="/" />
+  <artifact type="jar" name="QueryManager:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/QueryManager_jar</output-path>
+    <root id="archive" name="Query Manager.jar">
+      <element id="module-output" name="Query Manager" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/javafx.graphics.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/javafx.media.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/javafx.web.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/javafx-swt.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/javafx.controls.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/reactfx-2.0-M5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/javafx.fxml.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/richtextfx-0.11.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/reactfx-2.0-M5.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/flowless-0.6.8.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/undofx-2.1.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/wellbehavedfx-0.3.3.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/javafx.base.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/javafx.swing.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/javafx.media.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/javafx.fxml.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/lib/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../json-20210307.jar" path-in-jar="/" />
       <element id="file-copy" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/bin/api-ms-win-core-console-l1-1-0.dll" />
       <element id="file-copy" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/bin/api-ms-win-core-console-l1-2-0.dll" />
       <element id="file-copy" path="$PROJECT_DIR$/../javafx-sdk-23.0.2/bin/api-ms-win-core-datetime-l1-1-0.dll" />
