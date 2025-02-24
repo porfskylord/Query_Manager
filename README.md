@@ -1,4 +1,4 @@
-# Save Query App
+# Query Manager App
 
 ## Overview
 Save Query App is a JavaFX-based application designed for efficiently managing, organizing, and editing SQL queries. It categorizes queries into three sections and provides an IDE-like Query Editor with line numbers and syntax highlighting.
