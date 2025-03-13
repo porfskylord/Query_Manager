@@ -78,4 +78,4 @@ Query Manager App is a JavaFX-based application designed for efficiently managin
 ### Clone the Repository
 1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/porfskylord/save-query-app.git
+   git clone https://github.com/porfskylord/Query_Manager.git
