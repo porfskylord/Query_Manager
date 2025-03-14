@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.Region?>
+<VBox fx:id="root" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="530.0" style="-fx-background-color: #181818; -fx-border-radius: 10; -fx-border-color: #444; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomAlert">
+
+                <!-- Custom Title Bar -->
+    <HBox fx:id="titleBar" alignment="CENTER" prefHeight="39.0" prefWidth="525.0"
+          style="-fx-background-color: #181818; -fx-padding: 10px; -fx-border-radius: 8px;">
+
+        <!-- App Icon (Left Side) -->
+        <ImageView fx:id="appIcon" fitHeight="20" fitWidth="20"/>
+
+        <!-- Spacer to push label to the center -->
+        <Region HBox.hgrow="ALWAYS"/>
+
+        <!-- Application Title (Centered) -->
+        <Label fx:id="alertTitle" text="Custom Alert"
+               style="-fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+        <!-- Another Spacer to push the button to the right -->
+        <Region HBox.hgrow="ALWAYS"/>
+
+        <!-- Close Button (Right Side) -->
+        <Button fx:id="closeBtn" text="❌"
+                style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 16px; -fx-padding: 5px;"/>
+
+    </HBox>
+
+             <!-- Content Area -->
+    <Label fx:id="alertMessage" style="-fx-text-fill: #ddd; -fx-font-size: 14px; -fx-padding: 10px;" text="This is a modern dark-themed alert!" wrapText="true">
+      <VBox.margin>
+         <Insets top="20.0" />
+      </VBox.margin>
+   </Label>
+
+                <!-- Buttons Section -->
+    <HBox alignment="CENTER" prefHeight="94.0" prefWidth="492.0" spacing="15" style="-fx-padding: 10px;">
+        <Button fx:id="okBtn" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #252526; -fx-border-color: #404040; -fx-border-radius: 5px;" textFill="WHITE" text="OK">
+         <HBox.margin>
+            <Insets bottom="10.0" left="400.0" />
+         </HBox.margin>
+      </Button>
+
+                </HBox>
+   <effect>
+      <Bloom />
+   </effect>
+   <padding>
+      <Insets left="10.0" right="10.0" />
+   </padding>
+
+</VBox>

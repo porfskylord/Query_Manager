@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" spacing="0" style="-fx-border-radius: 8; -fx-border-color: #2e2e2e;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SaveQueryController">
+
+   <!-- Custom Title Bar -->
+   
+
+   <HBox fx:id="titleBar" alignment="CENTER_LEFT" minHeight="-Infinity" prefHeight="26.0" prefWidth="1280.0" style="-fx-background-color: #2a2a2a; -fx-padding: 5px; -fx-spacing: 8px; -fx-border-radius: 8px;">
+
+      <!-- App Icon -->
+      <ImageView fx:id="appIcon" fitHeight="18" fitWidth="18" />
+
+      <!-- Application Title -->
+      <Label style="-fx-text-fill: white; -fx-font-size: 14px;" text="Query Manager" HBox.hgrow="ALWAYS" />
+
+      <!-- Minimize Button -->
+      <Button fx:id="minimizeBtn" mnemonicParsing="false" onAction="#minimizeWindow" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px;" text="➖">
+         <HBox.margin>
+            <Insets left="1060.0" />
+         </HBox.margin></Button>
+
+      <!-- Close Button -->
+      <Button fx:id="closeBtn" mnemonicParsing="false" onAction="#closeWindow" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px;" text="❌" />
+
+   </HBox>
+
+
+   <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #404040; -fx-border-color: #2e2e2e; -fx-border-radius: 8px;" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+      <tabs>
+         <Tab text="Save Queries">
+            <content>
+               <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #181818;">
+                  <center>
+                     <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                        <children>
+                           <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="1300.0">
+                              <children>
+                                 <Label prefHeight="17.0" prefWidth="100.0" text="Task Name :" textFill="WHITE">
+                                    <HBox.margin>
+                                       <Insets />
+                                    </HBox.margin>
+                                 </Label>
+                                 <TextField fx:id="taskNameField" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #252526; -fx-border-radius: 5;" />
+                                 <Label prefHeight="17.0" prefWidth="100.0" text="Database Name :" textFill="WHITE">
+                                    <HBox.margin>
+                                       <Insets left="20.0" right="20.0" />
+                                    </HBox.margin>
+                                 </Label>
+                                 <TextField fx:id="databaseNameField" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: #252526; -fx-border-radius: 5;">
+                                    <HBox.margin>
+                                       <Insets />
+                                    </HBox.margin>
+                                 </TextField>
+                                 <CheckBox fx:id="isTempQuery" mnemonicParsing="false" prefHeight="23.0" prefWidth="112.0" text="Is Temp Query" textFill="WHITE">
+                                    <HBox.margin>
+                                       <Insets left="20.0" />
+                                    </HBox.margin>
+                                    <opaqueInsets>
+                                       <Insets />
+                                    </opaqueInsets>
+                                 </CheckBox>
+                              </children>
+                              <padding>
+                                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                              </padding>
+                              <VBox.margin>
+                                 <Insets top="10.0" />
+                              </VBox.margin>
+                           </HBox>
+                           <VBox fx:id="queryContainer" prefHeight="600.0" spacing="10.0" style="-fx-border-color: #2e2e2e; -fx-border-radius: 5;">
+                              <VBox.margin>
+                                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                              </VBox.margin>
+                           </VBox>
+                           <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                              <children>
+                                 <Button mnemonicParsing="false" onAction="#saveQuery" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #252526; -fx-border-color: #404040; -fx-border-radius: 5px;" text="Save" textFill="WHITE">
+                                    <HBox.margin>
+                                       <Insets right="20.0" />
+                                    </HBox.margin>
+                                 </Button>
+                                 <Button mnemonicParsing="false" onAction="#clearDate" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #252526; -fx-border-color: #404040; -fx-border-radius: 5px;" text="Clear" textFill="WHITE">
+                                    <HBox.margin>
+                                       <Insets left="20.0" />
+                                    </HBox.margin>
+                                 </Button>
+                              </children>
+                           </HBox>
+                        </children>
+                     </VBox>
+                  </center>
+               </BorderPane>
+            </content>
+         </Tab>
+         <Tab fx:id="viewQueriesTab" text="View Queries">
+            <BorderPane style="-fx-background-color: #181818;" xmlns:fx="http://javafx.com/fxml/1">
+               <center>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="430.0">
+                           <children>
+                              <HBox prefHeight="29.0" prefWidth="415.0">
+                                 <children>
+                                    <Label text="Pending Queries" textFill="WHITE">
+                                       <HBox.margin>
+                                          <Insets left="8.0" />
+                                       </HBox.margin></Label>
+                                    <TextField fx:id="searchPending" onKeyReleased="#filterQueries" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #252526; -fx-border-radius: 5;">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="178.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <ListView fx:id="queryListView" prefHeight="580.0" prefWidth="430.0" style="-fx-border-color: transparent; -fx-background-insets: 0; -fx-background-color: #1e1e1e; -fx-border-color: #2e2e2e; -fx-border-radius: 5;">
+                                 <VBox.margin>
+                                    <Insets left="8.0" right="8.0" />
+                                 </VBox.margin>
+                              </ListView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="430.0" style="-fx-border-color: transparent; -fx-background-insets: 0;">
+                           <children>
+                              <HBox prefHeight="29.0" prefWidth="415.0">
+                                 <children>
+                                    <Label text="Temp Queries" textFill="WHITE" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <ListView fx:id="queryListViewt" prefHeight="580.0" prefWidth="430.0" style="-fx-border-color: transparent; -fx-background-insets: 0; -fx-background-color: #1e1e1e; -fx-border-color: #2e2e2e; -fx-border-radius: 5;">
+                                 <VBox.margin>
+                                    <Insets right="8.0" />
+                                 </VBox.margin>
+                              </ListView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="430.0">
+                           <children>
+                              <HBox prefHeight="29.0" prefWidth="415.0">
+                                 <children>
+                                    <Label text="Deployed Queries" textFill="WHITE" />
+                                    <TextField fx:id="searchDeployed" onKeyReleased="#filterQueries" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #252526; -fx-border-radius: 5;">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="178.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <ListView fx:id="queryListViewd" prefHeight="580.0" prefWidth="430.0" style="-fx-border-color: transparent; -fx-background-insets: 0; -fx-background-color: #1e1e1e; -fx-border-color: #2e2e2e; -fx-border-radius: 5;">
+                                 <VBox.margin>
+                                    <Insets right="8.0" />
+                                 </VBox.margin></ListView>
+                           </children>
+                        </VBox>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets left="4.0" right="4.0" />
+                     </BorderPane.margin>
+                  </HBox>
+               </center>
+               <top>
+                  <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label style="-fx-font-size: 20px; -fx-padding: 10px;" text="Query List" textFill="WHITE" />
+                        <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#refreshList" style="-fx-background-color: #252526; -fx-border-color: #404040; -fx-border-radius: 5;" text="🔄" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="1105.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </HBox>
+               </top>
+            </BorderPane>
+         </Tab>
+
+      </tabs>
+   </TabPane>
+
+
+</VBox>
