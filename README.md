@@ -31,7 +31,7 @@ Query Manager App is a JavaFX-based application designed for efficiently managin
   - **Save/Clear Buttons:** Options to save the query or clear the input fields.
     
 #### Save Queries Screen
-![Save Home](screenshots/SaveHome.png)
+![Save Home](screenshots/SaveHome.png.png)
 
 - **View Queries Tab:**  
   - **Three Sections:**  
@@ -42,7 +42,7 @@ Query Manager App is a JavaFX-based application designed for efficiently managin
   - **Refresh Button:** Update the query lists to view the most recent changes.
     
 #### View Queries Screen
-![View Queries](screenshots/ViewQuery.png)
+![View Queries](screenshots/ViewQuery.png.png)
 
 ### Query Editor (QueryEditorController)
 - **IDE-like Editing Experience:**  
@@ -54,7 +54,7 @@ Query Manager App is a JavaFX-based application designed for efficiently managin
   - **Close Button:** Exit the query editor.
 
 #### Query Editor Screen
-![Query Editor](screenshots/QueryEditor.png)
+![Query Editor](screenshots/QueryEditor.png.png)
 
 
 ## Application Workflow
