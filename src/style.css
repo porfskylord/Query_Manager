@@ -1,0 +1,176 @@
+.root {
+    -fx-background-color: #181818; /* Dark background */
+    -fx-base: #181818;
+    -fx-control-inner-background: #181818;
+    -fx-text-fill: #ffffff; /* White text */
+}
+/* Custom Title Bar */
+.hbox {
+    -fx-background-color: #181818;
+}
+
+/* TabPane */
+.tab-pane {
+    -fx-background-color: #181818;
+    -fx-border-color: transparent; /* Remove border */
+
+}
+
+/* Tabs */
+.tab {
+    -fx-background-color: #181818;
+    -fx-text-fill: #CCCCCC;
+    -fx-border-color: transparent; /* Remove border */
+
+}
+
+.tab:selected {
+    -fx-background-color: #252526;  /* Dark background */
+    -fx-text-fill: white;  /* White text */
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+}
+
+
+/* Labels */
+.label {
+    -fx-text-fill: white;
+}
+
+/* TextFields */
+.text-field {
+    -fx-background-color: #2A2A2A;
+    -fx-text-fill: white;
+    -fx-border-color: #555;
+}
+
+.text-field:focused {
+    -fx-border-color: transparent;
+}
+
+/* Query Editor (Fix White Background) */
+.text-area {
+    -fx-background-color: #1E1E1E;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #333;
+}
+
+.text-area .content {
+    -fx-background-color: #1E1E1E;
+}
+
+/* ListView */
+.list-view {
+    -fx-background-color: #181818;
+    -fx-text-fill: white;
+}
+
+.list-view .list-cell {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: white;
+}
+
+.list-view .list-cell:filled:hover {
+    -fx-background-color: #181818;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #444;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #666;
+}
+
+.button:pressed {
+    -fx-background-color: #888;
+}
+
+/* CheckBox */
+.check-box {
+    -fx-text-fill: white;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #00A6FF;
+}
+
+/* Code Editor Background */
+.code-area {
+    -fx-background-color: #1E1E1E; /* Dark background */
+}
+
+/* Default Text */
+.text {
+    -fx-fill: white;
+}
+
+/* SQL Keywords */
+.keyword {
+    -fx-fill: #569CD6; /* Light Blue */
+    -fx-font-weight: bold;
+}
+
+/* String Literals (Single-quoted) */
+.string {
+    -fx-fill: #CE9178; /* Soft Orange */
+}
+
+/* Quoted Identifiers (Double-quoted) */
+.quoted {
+    -fx-fill: #D69D85; /* Light Red */
+}
+
+/* Integers */
+.number {
+    -fx-fill: #B5CEA8; /* Light Green for Numbers */
+}
+
+/* SQL Comments */
+.comment {
+    -fx-fill: #6A9955; /* Green */
+}
+
+/* Line Numbers */
+.lineno {
+    -fx-background-color: #2A2A2A; /* Dark gray background */
+    -fx-text-fill: #AAAAAA; /* Light gray text */
+}
+
+
+/* Scrollbar Styling */
+.scroll-bar {
+    -fx-background-color: #181818;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #333333;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #555555;
+}
+/* Dark theme for JavaFX Alerts */
+.dark-alert {
+    -fx-background-color: #2a2a2a;
+    -fx-border-color: #444;
+}
+
+/* Style the text inside the alert */
+.dialog-pane .content.label {
+    -fx-text-fill: white;
+}
+
+/* Style the buttons */
+.dialog-pane .button {
+    -fx-background-color: #444;
+    -fx-text-fill: white;
+    -fx-border-color: #666;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #555;
+}
